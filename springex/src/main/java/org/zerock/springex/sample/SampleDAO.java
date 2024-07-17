@@ -1,4 +1,11 @@
 package org.zerock.springex.sample;
 
-public class SampleDAO {
+import org.springframework.stereotype.Repository;
+
+//@Repository
+//public class SampleDAO {
+//}
+
+// 인터페이스 타입으로 수정
+public interface SampleDAO {
 }
