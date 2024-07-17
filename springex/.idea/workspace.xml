@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/17 1st">
+    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/17 2nd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TimeMapper2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/TimeMapper2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TimeMapperTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/EventSampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/EventSampleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/SampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/SampleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/SampleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/sample/SampleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/sample/SampleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/sample/SampleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -46,6 +48,7 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,7 +90,10 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Build springex.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.SampleTests.testConnection.executor": "Run",
     "Gradle.SampleTests.testService1.executor": "Run",
+    "Gradle.TimeMapperTests.executor": "Run",
+    "Gradle.TimeMapperTests.testGetTime.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 9.0.90.executor": "Run",
@@ -102,7 +108,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SampleTests.testConnection">
+  <component name="RunManager" selected="Gradle.TimeMapperTests.testNow">
     <configuration name="SampleTests.testConnection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,6 +147,78 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.zerock.springex.sample.SampleTests.testService1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.springex.mapper.TimeMapperTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTests.testGetTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.springex.mapper.TimeMapperTests.testGetTime&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTests.testNow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.springex.mapper.TimeMapperTests.testNow&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -242,11 +320,17 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.SampleTests.testConnection" />
+      <item itemvalue="Gradle.TimeMapperTests" />
+      <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
+      <item itemvalue="Gradle.TimeMapperTests.testNow" />
       <item itemvalue="Gradle.SampleTests.testService1" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.90" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TimeMapperTests.testNow" />
+        <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
+        <item itemvalue="Gradle.TimeMapperTests" />
         <item itemvalue="Gradle.SampleTests.testConnection" />
         <item itemvalue="Gradle.SampleTests.testService1" />
       </list>
@@ -270,7 +354,7 @@
       <updated>1721108301899</updated>
       <workItem from="1721108302943" duration="5986000" />
       <workItem from="1721115613856" duration="813000" />
-      <workItem from="1721174991336" duration="10512000" />
+      <workItem from="1721174991336" duration="18995000" />
     </task>
     <task id="LOCAL-00001" summary="7/16 spring start">
       <option name="closed" value="true" />
@@ -296,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721181835860</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="7/17 2nd">
+      <option name="closed" value="true" />
+      <created>1721187274471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721187274471</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +398,17 @@
     <MESSAGE value="7/16 spring start" />
     <MESSAGE value="7/16 spring 2nd" />
     <MESSAGE value="7/17 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/17 1st" />
+    <MESSAGE value="7/17 2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/17 2nd" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
