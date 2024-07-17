@@ -1,11 +1,13 @@
 package org.zerock.springex.sample;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Primary
-public class EventSampleDAOImpl implements SampleDAO {
+//@Primary
+@Qualifier("event")
+public class EventSampleDAOImpl implements SampleDAO { // 특정한 기간에만 사용할 객체
 }
 
 // 이렇게 되면 SampleService에 필요한 SampleDAO 타입의 빈(Bean)이 두 개(SampleDAOImpl, EventSampleDAOImpl)가 되기 때문에
