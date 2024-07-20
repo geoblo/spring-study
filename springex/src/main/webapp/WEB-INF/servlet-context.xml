@@ -8,7 +8,7 @@
     <!-- 스프링 MVC 관련 설정들 작성 -->
 
     <!-- 스프링 MVC 설정을 어노테이션 기반으로 처리한다는 의미 + 스프링 MVC의 여러 객체들을 자동으로 스프링의 빈(Bean)으로 등록하게 하는 기능 -->
-    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
 
     <!-- webapp 폴더 아래에 'resources' 폴더 - 나중에 정적 파일들(html, css, js, 이미지 등)을 서비스 하기 위한 경로 -->
     <!-- 정적인 파일의 경로를 지정 -->
@@ -27,4 +27,12 @@
     <!-- @Controller, @Service, @Repository, @Component -->
     <!-- 해당 패키지를 스캔해서 어노테이션이 추가된 클래스들의 객체들을 스프링의 빈(Bean)으로 설정되게 만듦 -->
     <context:component-scan base-package="org.zerock.springex.controller" />
+
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="formatters">
+            <set>
+                <bean class="org.zerock.springex.controller.fommater.LocalDateFormatter" />
+            </set>
+        </property>
+    </bean>
 </beans>

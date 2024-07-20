@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.zerock.springex.dto.TodoDTO;
 
 @Controller
 @RequestMapping("/todo") // 특정한 경로의 요청(Request)을 지정, 클래스의 선언부와 메소드에 사용 가능
@@ -28,7 +29,8 @@ public class TodoController {
     }
 
     @PostMapping("/register")
-    public void registerPost() {
+    public void registerPost(TodoDTO todoDTO) { // 객체 자료형의 파라미터 수집
         log.info("POST todo register....");
+        log.info(todoDTO);
     }
 }
