@@ -23,6 +23,12 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>/WEB-INF/servlet-context.xml</param-value>
         </init-param>
+
+        <init-param>
+            <param-name>throwExceptionIfNoHandlerFound</param-name>
+            <param-value>true</param-value>
+        </init-param>
+
         <!-- 톰캣 로딩 시에 클래스를 미리 로딩해 두기 위한 설정 -->
         <load-on-startup>1</load-on-startup>
     </servlet>

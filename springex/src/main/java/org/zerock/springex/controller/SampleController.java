@@ -4,8 +4,10 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.springex.dto.TodoDTO;
 
 import java.time.LocalDate;
@@ -58,10 +60,39 @@ public class SampleController {
         log.info("model: " + model);
     }
 
-    // Model이라는 특별한 파라미터
+    // Java Beans
+//    @GetMapping("/ex4_1")
+//    public void ex4Extra(TodoDTO todoDTO) {
+//        log.info("ex4Extra.............");
+//        log.info(todoDTO);
+//    }
+
+    // @ModelAttribute: 해당 파라미터는 반드시 Model에 포함되어서 다시 뷰(View)로 전달됨을 명시(주로 기본 자료형이나 Wrapper 클래스, 문자열에 사용)
+    // (위 코드처럼 생략 가능하나) 자동으로 생성된 변수명 todoDTO 외에 다른 이름을 사용하고 싶다면 명시적으로 지정
     @GetMapping("/ex4_1")
-    public void ex4Extra(TodoDTO todoDTO, Model model) {
+    public void ex4Extra(@ModelAttribute("dto") TodoDTO todoDTO) {
         log.info("ex4Extra.............");
         log.info(todoDTO);
+    }
+
+    @GetMapping("/ex5")
+    public String ex5(RedirectAttributes redirectAttributes) {
+        // 쿼리 스트링으로 추가됨
+        redirectAttributes.addAttribute("name", "ABC");
+        // URL에 보이지는 않지만, JSP에서는 일회용으로 사용할 수 있음
+        redirectAttributes.addFlashAttribute("result", "success");
+
+        return "redirect:/ex6";
+    }
+
+    @GetMapping("/ex6")
+    public void ex6() {
+
+    }
+
+    @GetMapping("/ex7")
+    public void ex7(String p1, int p2) {
+        log.info("p1.............." + p1);
+        log.info("p2.............." + p2);
     }
 }
