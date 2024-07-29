@@ -13,7 +13,7 @@
     <!-- 해당 패키지를 조사해서 클래스의 어노테이션들을 이용하는 설정 -->
     <!-- 스프링 빈(Bean)으로 인식할 수 있도록 config 패키지를 component-scan을 이용해서 추가 -->
     <context:component-scan base-package="org.zerock.springex.config" />
-
+    <context:component-scan base-package="org.zerock.springex.service" />
 
     <!-- HikariCP 설정 -->
     <!-- HikariConfig -->

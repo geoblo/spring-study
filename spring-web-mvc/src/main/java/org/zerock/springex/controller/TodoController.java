@@ -29,8 +29,10 @@ public class TodoController {
     }
 
     @PostMapping("/register")
-    public void registerPost(TodoDTO todoDTO) { // 객체 자료형의 파라미터 수집
+    public String registerPost(TodoDTO todoDTO) { // 객체 자료형의 파라미터 수집
         log.info("POST todo register....");
         log.info(todoDTO);
+
+        return "redirect:/todo/list";
     }
 }

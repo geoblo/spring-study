@@ -15,6 +15,11 @@
             <AppenderRef ref="Console" />
         </Logger>
 
+        <!-- TODO: trace 로그가 왜 안보일까??? -->
+        <Logger name="org.zerock.springex.mapper" level="trace" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+
         <Root level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Root>

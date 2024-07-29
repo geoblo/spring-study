@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/21 1st">
+    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/20 1st">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,12 +56,12 @@
     &quot;assignee&quot;: &quot;geoblo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/geoblo/spring-study.git&quot;,
-    &quot;accountId&quot;: &quot;11f85f68-ac7d-494f-b8db-c12dc19f2163&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/geoblo/spring-study.git",
+    "accountId": "447b75f3-33f6-4fbf-85ee-dad9edfa82b1"
   }
-}</component>
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -80,31 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Build springex.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SampleTests.testConnection.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SampleTests.testService1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TimeMapperTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TimeMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TimeMapperTests.testNow.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.90.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/intelliJ/spring-study/springex/src/main/webapp/WEB-INF/views&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.Build springex.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.SampleTests.testConnection.executor": "Run",
+    "Gradle.SampleTests.testService1.executor": "Run",
+    "Gradle.TimeMapperTests.executor": "Run",
+    "Gradle.TimeMapperTests.testGetTime.executor": "Run",
+    "Gradle.TimeMapperTests.testNow.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.90.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/goni.kim/javaTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intelliJ\spring-study\springex\src\main\webapp\WEB-INF\views" />
@@ -362,8 +362,8 @@
       <workItem from="1721115613856" duration="813000" />
       <workItem from="1721174991336" duration="20970000" />
       <workItem from="1721265139739" duration="6255000" />
-      <workItem from="1721446357324" duration="13595000" />
-      <workItem from="1722209605763" duration="2913000" />
+      <workItem from="1721446357324" duration="12683000" />
+      <workItem from="1722232866487" duration="140000" />
     </task>
     <task id="LOCAL-00001" summary="7/16 spring start">
       <option name="closed" value="true" />
@@ -413,30 +413,11 @@
       <option name="project" value="LOCAL" />
       <updated>1721458783979</updated>
     </task>
-    <task id="LOCAL-00007" summary="7/21 1st">
-      <option name="closed" value="true" />
-      <created>1721569260532</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1721569260532</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="7/16 spring start" />
@@ -445,8 +426,7 @@
     <MESSAGE value="7/17 2nd" />
     <MESSAGE value="7/17 3rd" />
     <MESSAGE value="7/20 1st" />
-    <MESSAGE value="7/21 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/21 1st" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/20 1st" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
