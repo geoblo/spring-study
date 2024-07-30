@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/29 2nd">
+    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/21 1st">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/TodoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/TodoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,6 @@
     &quot;Gradle.TimeMapperTests.testNow.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TodoMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TodoMapperTests.testInsert.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMapperTests.testSelectAll.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TodoServiceTests.testRegister.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 9.0.90.executor&quot;: &quot;Run&quot;,
@@ -120,7 +112,6 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -142,6 +133,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.90">
+    <configuration name="TimeMapperTests.testGetTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.springex.mapper.TimeMapperTests.testGetTime&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TimeMapperTests.testNow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,30 +219,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.zerock.springex.mapper.TodoMapperTests.testInsert&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TodoMapperTests.testSelectAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.zerock.springex.mapper.TodoMapperTests.testSelectAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -353,20 +344,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.TodoMapperTests.testSelectAll" />
       <item itemvalue="Gradle.TodoMapperTests.testGetTime" />
       <item itemvalue="Gradle.TodoMapperTests.testInsert" />
       <item itemvalue="Gradle.TodoServiceTests.testRegister" />
+      <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
       <item itemvalue="Gradle.TimeMapperTests.testNow" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.90" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TodoServiceTests.testRegister" />
         <item itemvalue="Gradle.TodoMapperTests.testInsert" />
         <item itemvalue="Gradle.TodoMapperTests.testGetTime" />
-        <item itemvalue="Gradle.TodoMapperTests.testSelectAll" />
-        <item itemvalue="Gradle.TodoServiceTests.testRegister" />
         <item itemvalue="Gradle.TimeMapperTests.testNow" />
+        <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
       </list>
     </recent_temporary>
   </component>
@@ -393,10 +384,7 @@
       <workItem from="1721446357324" duration="13595000" />
       <workItem from="1722209605763" duration="2913000" />
       <workItem from="1722219145569" duration="3776000" />
-      <workItem from="1722232999070" duration="9642000" />
-      <workItem from="1722320816932" duration="4281000" />
-      <workItem from="1722325364869" duration="986000" />
-      <workItem from="1722326370185" duration="350000" />
+      <workItem from="1722232999070" duration="8403000" />
     </task>
     <task id="LOCAL-00001" summary="7/16 spring start">
       <option name="closed" value="true" />
@@ -454,15 +442,7 @@
       <option name="project" value="LOCAL" />
       <updated>1721569260532</updated>
     </task>
-    <task id="LOCAL-00008" summary="7/29 2nd">
-      <option name="closed" value="true" />
-      <created>1722241840670</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1722241840670</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,8 +467,7 @@
     <MESSAGE value="7/17 3rd" />
     <MESSAGE value="7/20 1st" />
     <MESSAGE value="7/21 1st" />
-    <MESSAGE value="7/29 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/29 2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/21 1st" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
