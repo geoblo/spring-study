@@ -12,4 +12,10 @@
         values (#{title}, #{dueDate}, #{writer})
     </insert>
     <!-- '#{title}' 부분은 PreparedStatement로 다시 변경되면서 '?'로 처리되고, 주어진 객체의 getTitle()을 호출한 결과를 적용 -->
+
+    <!-- resultType은 JDBC의 ResultSet의 한 행(row)을 어떤 타입의 객체로 만들것인지를 지정 -->
+    <select id="selectAll" resultType="org.zerock.springex.domain.TodoVO">
+        select * from tbl_todo
+        order by tno desc
+    </select>
 </mapper>
