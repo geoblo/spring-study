@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/29 2nd">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/fommater/CheckboxFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" afterDir="false" />
+    <list default="true" id="5e9d9ab0-b3ea-4d0d-8c95-854843d02a91" name="Changes" comment="7/31 1st">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,44 +88,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build spring-web-mvc.executor": "Run",
-    "Gradle.Build springex.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.SampleTests.testConnection.executor": "Run",
-    "Gradle.SampleTests.testService1.executor": "Run",
-    "Gradle.TimeMapperTests.executor": "Run",
-    "Gradle.TimeMapperTests.testGetTime.executor": "Run",
-    "Gradle.TimeMapperTests.testNow.executor": "Run",
-    "Gradle.TodoMapperTests.testGetTime.executor": "Run",
-    "Gradle.TodoMapperTests.testInsert.executor": "Run",
-    "Gradle.TodoMapperTests.testSelectAll.executor": "Run",
-    "Gradle.TodoMapperTests.testSelectOne.executor": "Run",
-    "Gradle.TodoServiceTests.testRegister.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 9.0.90.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/goni.kim/javaTest/spring-web-mvc/src/main/webapp/WEB-INF/views/todo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build spring-web-mvc.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build springex.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleTests.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleTests.testService1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeMapperTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeMapperTests.testNow.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testSelectAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testSelectOne.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoServiceTests.testRegister.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.90.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/goni.kim/javaTest/spring-web-mvc/src/main/webapp/WEB-INF/views/todo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\goni.kim\javaTest\spring-web-mvc\src\main\webapp\WEB-INF\views\todo" />
@@ -405,6 +395,7 @@
       <workItem from="1722320816932" duration="4281000" />
       <workItem from="1722325364869" duration="986000" />
       <workItem from="1722326370185" duration="350000" />
+      <workItem from="1722496785520" duration="2988000" />
     </task>
     <task id="LOCAL-00001" summary="7/16 spring start">
       <option name="closed" value="true" />
@@ -470,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722241840670</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="7/31 1st">
+      <option name="closed" value="true" />
+      <created>1722415695727</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722415695727</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +495,8 @@
     <MESSAGE value="7/20 1st" />
     <MESSAGE value="7/21 1st" />
     <MESSAGE value="7/29 2nd" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/29 2nd" />
+    <MESSAGE value="7/31 1st" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/31 1st" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
