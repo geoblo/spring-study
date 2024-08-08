@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.springex.dto.PageRequestDTO;
 import org.zerock.springex.dto.TodoDTO;
 import org.zerock.springex.service.TodoService;
 
@@ -22,11 +23,26 @@ import javax.validation.Valid;
 public class TodoController {
     private final TodoService todoService;
 
-    @RequestMapping("/list") // 최종 경로는 '/todo/list'
-    public void list(Model model) {
-        log.info("todo list........");
+//    @RequestMapping("/list") // 최종 경로는 '/todo/list'
+//    public void list(Model model) {
+//        log.info("todo list........");
+//
+//        model.addAttribute("dtoList", todoService.getAll());
+//    }
 
-        model.addAttribute("dtoList", todoService.getAll());
+    @GetMapping("/list")
+    public void list(@Valid PageRequestDTO pageRequestDTO,
+                     BindingResult bindingResult,
+                     Model model) {
+        log.info("todo list........");
+        log.info(pageRequestDTO);
+
+        // 잘못된 파라미터 값들이 들어오는 경우 page는 1, size는 10으로 고정된 값을 처리하도록 구성
+        if (bindingResult.hasErrors()) {
+            pageRequestDTO = pageRequestDTO.builder().build();
+        }
+
+        model.addAttribute("responseDTO", todoService.getList(pageRequestDTO));
     }
 
     // @RequestMapping(value = "/register", method = RequestMethod.GET)

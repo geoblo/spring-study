@@ -62,7 +62,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <c:forEach items="${dtoList}" var="dto">
+                                    <c:forEach items="${responseDTO.dtoList}" var="dto">
                                         <tr>
                                             <%-- TODO: <c:out />을 써야 하는지? --%>
 <%--                                            <th scope="row"><c:out value="${dto.tno}" /></th>--%>

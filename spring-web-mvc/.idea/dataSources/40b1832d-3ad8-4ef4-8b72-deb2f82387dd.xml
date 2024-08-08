@@ -23,7 +23,7 @@ webdb|schema||webuser||SHOW VIEW|G
 webdb|schema||webuser||TRIGGER|G
 webdb|schema||webuser||UPDATE|G
 webdb|schema||webuser||grant option|G</Grants>
-      <ServerVersion>11.3.2</ServerVersion>
+      <ServerVersion>11.4.2</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1220,7 +1220,7 @@ webdb|schema||webuser||grant option|G</Grants>
     </schema>
     <schema id="509" parent="1" name="webdb">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-07-29.07:03:00</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-08.06:48:50</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="510" parent="1" name="webuser"/>
@@ -1247,52 +1247,48 @@ webdb|schema||webuser||grant option|G</Grants>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="516" parent="511" name="uuid">
-      <DasType>varchar(50)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <index id="517" parent="511" name="PRIMARY">
+    <index id="516" parent="511" name="PRIMARY">
       <ColNames>mid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="518" parent="511" name="PRIMARY">
+    <key id="517" parent="511" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="519" parent="512" name="tno">
+    <column id="518" parent="512" name="tno">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="520" parent="512" name="title">
+    <column id="519" parent="512" name="title">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="521" parent="512" name="dueDate">
+    <column id="520" parent="512" name="dueDate">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="522" parent="512" name="writer">
+    <column id="521" parent="512" name="writer">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="523" parent="512" name="finished">
+    <column id="522" parent="512" name="finished">
       <DasType>tinyint(4)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>5</Position>
     </column>
-    <index id="524" parent="512" name="PRIMARY">
+    <index id="523" parent="512" name="PRIMARY">
       <ColNames>tno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="525" parent="512" name="PRIMARY">
+    <key id="524" parent="512" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

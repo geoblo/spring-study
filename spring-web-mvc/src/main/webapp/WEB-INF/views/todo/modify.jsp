@@ -133,6 +133,9 @@
     });
 
     document.querySelector(".btn-secondary").addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
         // self.location = "/todo/list";
         location.href = "/todo/list";
     });

@@ -34,4 +34,15 @@
         set title = #{title}, dueDate = #{dueDate}, finished = #{finished}
         where tno = #{tno}
     </update>
+
+    <select id="selectList" resultType="org.zerock.springex.domain.TodoVO">
+        select * from tbl_todo
+        order by tno desc
+        limit #{skip}, #{size}
+        <!-- MyBatis는 기본적으로 getter, setter를 통해서 동작하기 때문에 #{skip}의 경우는 getSkip()을 호출 -->
+    </select>
+
+    <select id="getCount" resultType="int">
+        select count(tno) from tbl_todo
+    </select>
 </mapper>
