@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thymeleaf Control</title>
+</head>
+<body>
+  <h1>Thymeleaf Control</h1>
+  <h2>th:if</h2>
+  <th:block th:if="${data != null}">
+    <p>메시지 : [[${data}]]</p>
+  </th:block>
+  <th:block th:unless="${data != null}">
+    <p>메시지가 없습니다.</p>
+  </th:block>
+  <hr>
+  <h2>th:switch</h2>
+  <th:block th:switch="${age/10}">
+    <p th:case="2">20대입니다.</p>
+    <p th:case="3">30대입니다.</p>
+    <p th:case="4">40대입니다.</p>
+    <p th:case="5">50대입니다.</p>
+  </th:block>
+  <hr>
+  <h2>th:each</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th width="50">순서</th>
+        <th width="100">이름</th>
+        <th width="50">나이</th>
+        <th width="150">주소</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- #lists.isEmpty(): List가 비어있는지 아닌지(Thymeleaf 제공 함수) -->
+      <th:block th:if="${#lists.isEmpty(dList)}">
+        <tr>
+          <th colspan="3">출력할 데이터가 없습니다.</th>
+        </tr>
+      </th:block>
+      <th:block th:unless="${#lists.isEmpty(dList)}">
+        <th:block th:each="item, status:${dList}">
+          <tr>
+            <td th:text="${status.count}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.age}"></td>
+            <td th:text="${item.address}"></td>
+          </tr>
+        </th:block>
+      </th:block>
+    </tbody>
+  </table>
+  <hr>
+  <a th:href="@{sendData}">데이터전송 ></a>
+</body>
+</html>

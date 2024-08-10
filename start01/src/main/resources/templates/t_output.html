@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Thymeleaf Output</title>
+</head>
+<body>
+  <h1>Thymeleaf 활용</h1>
+  <h2>th:text와 th:utext의 차이</h2>
+  <div th:text="'테스트: ' + ${testStr}"></div>
+  <div th:utext="'테스트: ' + ${testStr}"></div>
+  <div>서버에서 온 문자열: [[${testStr}]]</div>
+  <div>서버에서 온 문자열: [(${testStr})]</div>
+  <hr>
+  <h2>Map 데이터 출력</h2>
+  <!-- ${식별자.키} -->
+  <p th:text="${mapdata.data1}"></p>
+  <p th:text="${mapdata.data2}"></p>
+  <p th:text="${mapdata.data3}"></p>
+  <hr>
+  <h2>DTO 데이터 출력 1</h2>
+  <p th:text="${dtodata.getName()}"></p>
+  <p th:text="${dtodata.age}"></p>
+  <p th:text="${dtodata.address}"></p>
+  <hr>
+  <h2>DTO 데이터 출력 2 (주로 사용)</h2>
+  <th:block th:object="${dtodata}">
+    <p th:text="*{name}"></p>
+    <p th:text="*{age}"></p>
+    <p th:text="*{address}"></p>
+  </th:block>
+  <hr>
+  <a th:href="@{t_control}">Thymeleaf 제어문 ></a>
+</body>
+<!-- JS에서 Thymeleaf 문법 사용하기 -->
+<script th:inline="javascript">
+    let msg = [[${message}]];
+
+    if (msg !== null) {
+      alert(msg);
+    }
+</script>
+</html>
