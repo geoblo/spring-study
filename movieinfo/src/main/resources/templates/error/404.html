@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="wrap">
-    <th:block th:insert="~{header.html}"></th:block>
+    <th:block th:insert="~{fragments::header('영화정보 사이트')}"></th:block>
     <div class="content">
         <h2 class="login-header">요청하신 페이지가 없습니다.</h2>
         <p th:text="${'경로 : ' + path}"></p>
@@ -16,7 +16,7 @@
         <p th:text="${'발생시간 : ' + timestamp}"></p>
         <p th:text="${'오류 : ' + error}"></p>
     </div>
-    <th:block th:insert="~{footer.html}"></th:block>
+    <th:block th:insert="~{fragments::footer}"></th:block>
 </div>
 </body>
 </html>

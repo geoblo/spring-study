@@ -29,13 +29,11 @@ public class PagingUtil {
 		//두번째 그룹 시작번호 = pageCnt(5) * 2 - (5 - 1) = 6
 		
 		//4. 현재 보이는 페이지 그룹의 마지막 번호 구하기
-		int end = (curGroup * pageCnt) >= totalPage ?
-				totalPage : curGroup * pageCnt;
+		int end = (curGroup * pageCnt) >= totalPage ? totalPage : curGroup * pageCnt;
 		
 		//이전 버튼 처리
 		if(start != 1) {
-			sb.append("<a class='pno' href='./?pageNum="
-					+ (start - 1) + "'>");
+			sb.append("<a class='pno' href='./?pageNum=" + (start - 1) + "'>");
 			sb.append("◀</a>");
 		}//<a class='pno' herf='./?pageNum=5'> 이전 </a>
 		//페이지 번호를 5개씩 보여주는 경우,

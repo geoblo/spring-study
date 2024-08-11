@@ -2,6 +2,7 @@ package com.icia.movieinfo.service;
 
 import com.icia.movieinfo.dao.MovieDao;
 import com.icia.movieinfo.dto.MovieDto;
+import com.icia.movieinfo.util.PagingUtil;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +22,13 @@ public class MovieService {
     @Autowired
     private MovieDao movieDao;
 
-//    private ModelAndView mav;
+    private ModelAndView mav;
 
     private int listCnt = 5;
 
-//    public ModelAndView getMovielist(Integer pageNum, HttpSession session) {
-    public List<MovieDto> getMovielist(Integer pageNum, HttpSession session) {
+    public ModelAndView getMovielist(Integer pageNum, HttpSession session) {
         log.info("getMovielist()");
-//        mav = new ModelAndView();
+        mav = new ModelAndView();
 
         if (pageNum == null) {
             pageNum = 1;
@@ -39,13 +39,31 @@ public class MovieService {
         map.put("listCnt", listCnt);
 
         List<MovieDto> mList = movieDao.getMovieList(map);
-//        mav.addObject("mList", mList);
-        
-        // paging 처리
+        mav.addObject("mList", mList);
+
+        // 페이징 처리
+        String pageHtml = getPaging(pageNum);
+        mav.addObject("paging", pageHtml);
 
         session.setAttribute("pageNum", pageNum);
+        mav.setViewName("list");
 
-        return mList;
+        return mav;
+    }
+
+    private String getPaging(Integer pageNum) {
+        String pageHtml = null;
+
+        //전체 글개수 구하기
+        int maxNum = movieDao.cntMovie();
+        //한 페이지 당 보여질 페이지 번호의 개수
+        int pageCnt = 5;
+
+        PagingUtil paging = new PagingUtil(maxNum, pageNum, listCnt, pageCnt);
+
+        pageHtml = paging.makePaging();
+
+        return pageHtml;
     }
 
     public String insertMovie(List<MultipartFile> files,
@@ -100,4 +118,68 @@ public class MovieService {
         movie.setP_sysname(sysname);
     }
 
+    public ModelAndView getMovie(Integer m_code) {
+        log.info("getMovie()");
+
+        mav = new ModelAndView();
+
+        MovieDto movie = movieDao.movieSelect(m_code);
+
+        mav.addObject("movie", movie);
+
+        return mav;
+    }
+
+    public String movieUpdate(List<MultipartFile> files,
+                              MovieDto movie,
+                              HttpSession session,
+                              RedirectAttributes rttr) {
+        log.info("movieUpdate()");
+        String msg = null;
+        String view = null;
+        String poster = movie.getP_sysname();
+        String upFile = files.get(0).getOriginalFilename();
+
+        try {
+            if(!files.get(0).isEmpty()) {
+                fileUpload(files, session, movie);
+            }
+            movieDao.movieUpdate(movie);
+
+            if (poster != null && !upFile.equals("")) {
+                fileDelete(poster, session);
+            }
+
+            view = "redirect:detail?m_code="+movie.getM_code();
+            msg = "수정 성공";
+        } catch (Exception e) {
+            e.printStackTrace();
+            view = "redirect:updateFrm?m_code="+movie.getM_code();
+            msg = "수정 실패";
+        }
+
+        rttr.addFlashAttribute("msg", msg);
+        return view;
+    }
+
+    private void fileDelete(String poster,
+                            HttpSession session) throws Exception{
+        log.info("fileDelete()");
+
+        String realPath = session.getServletContext().getRealPath("/");
+        realPath += "upload/" + poster;
+        File file = new File(realPath);
+        if(file.exists()){
+            file.delete();//파일이 있으면 삭제
+        }
+    }
+
+    //delete 메소드 추가
+    public String deleteMovie(Integer m_code) {
+        log.info("deleteMovie()");
+
+        movieDao.movieDelete(m_code);
+
+        return "redirect:/";
+    }
 }

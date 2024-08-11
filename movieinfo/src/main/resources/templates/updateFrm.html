@@ -19,8 +19,7 @@
 <div class="wrap">
 	<th:block th:insert="~{fragments::header('영화정보 사이트')}"></th:block>
 	<div class="content">
-		<form th:action="@{updateProc}" method="post"
-			  enctype="multipart/form-data">
+		<form th:action="@{updateProc}" method="post" enctype="multipart/form-data">
 			<h2 class="form-header">영화 정보 수정</h2>
 			<th:block th:object="${movie}">
 				<input type="hidden" name="m_code" th:value="*{m_code}">
@@ -44,7 +43,7 @@
 					   required>
 				<textarea rows="10" class="write-input ta" name="m_synopsis"
 						  placeholder="영화 개요" th:text="*{m_synopsis}"></textarea>
-				<input type="hidden" th:value="*{p_oriname}" name="p_oriname">
+<!--				<input type="hidden" th:value="*{p_oriname}" name="p_oriname">-->
 				<input type="hidden" th:value="*{p_sysname}" name="p_sysname">
 			</th:block>
 			<div class="detail">
@@ -63,10 +62,8 @@
 			<div class="filebox">
 				<!-- 수정 파일 입력 처리 영역 -->
 				<label for="file">업로드</label>
-				<input type="file" name="files" id="file"
-					   multiple>
-				<input type="text" class="upload-name"
-					   value="파일선택" readonly>
+				<input type="file" name="files" id="file" multiple>
+				<input type="text" class="upload-name" value="파일선택" readonly>
 			</div>
 			<div class="btn-area">
 				<input type="submit" class="btn-write" value="U">
@@ -92,8 +89,7 @@
 		let fileName = "";
 
 		if(files.length > 1){//하나 이상의 파일을 선택했을 경우
-			fileName = files[0].name + " 외 "
-					+ (files.length - 1) + "개";
+			fileName = files[0].name + " 외 "	+ (files.length - 1) + "개";
 		}
 		else if(files.length == 1) {
 			fileName = files[0].name;

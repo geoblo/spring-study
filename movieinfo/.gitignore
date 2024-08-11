@@ -38,4 +38,3 @@ out/
 
 # upload
 **/src/main/webapp/upload/
-.idea/*.xml

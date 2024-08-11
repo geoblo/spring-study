@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="wrap">
-    <th:block th:insert="~{header.html}"></th:block>
+    <th:block th:insert="~{fragments::header('영화정보 사이트')}"></th:block>
     <div class="content">
         <h2 class="login-header">서버에 문제가 있습니다.</h2>
         <p th:text="${'경로 : ' + path}"></p>
@@ -19,7 +19,7 @@
         <p th:text="${'메시지 : ' + message}"></p>
         <!-- <p th:text="${'trace : ' + trace}"></p> -->
     </div>
-    <th:block th:insert="~{footer.html}"></th:block>
+    <th:block th:insert="~{fragments::footer}"></th:block>
 </div>
 </body>
 </html>
